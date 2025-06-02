@@ -1,0 +1,3 @@
+Observações:
+O código possui tratamento de erro para números (decimais ou binários) negativos e dígitos inválidos;
+Caso o número a ser convertido seja muito grande, basta maximizar a janela da calculadora para que o valor possa ser visualizado.
