@@ -1,0 +1,169 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Página-1" id="BDumH6ijfhog8v5_YuaD">
+    <mxGraphModel dx="2977" dy="1886" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="R85Hv1dynGYi_RiyYHGt-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="474.75" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-1" value="Excluir Cartão" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="354.75" y="80" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-4" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&quot;&amp;gt;&amp;lt;_&amp;gt;...&amp;gt;&amp;lt;_&amp;gt;...&amp;gt;&amp;lt;_&amp;gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(18, 18, 18); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;gt;&amp;lt;_&amp;gt;...&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: center;&quot;&gt;&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;+&lt;/div&gt;&lt;div&gt;A fazer | Executando| Pronto&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; &amp;nbsp;...&amp;nbsp; &amp;nbsp; &amp;nbsp; |&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;...&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;|&amp;nbsp; &amp;nbsp; ...&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; &amp;nbsp;...&amp;nbsp; &amp;nbsp; &amp;nbsp; |&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;...&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;|&amp;nbsp; &amp;nbsp; ...&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp; &amp;nbsp;...&amp;nbsp; &amp;nbsp; &amp;nbsp; |&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;...&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;|&amp;nbsp; &amp;nbsp; ...&lt;/div&gt;&lt;div&gt;+&lt;/div&gt;&lt;div&gt;&quot;Digite o ID&lt;/div&gt;&lt;div&gt;do cartão que quer excluir:&amp;nbsp;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ou pressione ESC para voltar&quot;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" parent="1" vertex="1">
+          <mxGeometry x="424.75" y="200" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="R85Hv1dynGYi_RiyYHGt-5" target="R85Hv1dynGYi_RiyYHGt-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-5" value="Menu é carregado com base nos dados salvos no banco de dados local: cartões e suas posições" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="474.75" y="80" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-10" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=card;whiteSpace=wrap;size=20;arcSize=12;container=1;" parent="1" vertex="1">
+          <mxGeometry x="471.25" y="470" width="155" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-16" value="Dígito de escolha" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="R85Hv1dynGYi_RiyYHGt-10" vertex="1">
+          <mxGeometry x="18.75" y="15" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.555;exitY=0.813;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="R85Hv1dynGYi_RiyYHGt-4" target="R85Hv1dynGYi_RiyYHGt-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="754.75" y="340" as="sourcePoint" />
+            <mxPoint x="643.49" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="R85Hv1dynGYi_RiyYHGt-17" target="L6k6eRB9f3cUbvgONNE9-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="461.25" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="R85Hv1dynGYi_RiyYHGt-17" target="R85Hv1dynGYi_RiyYHGt-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-17" value="Dígito de escolha é igual a algum ID do banco de cartões?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="495" y="660" width="110" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="R85Hv1dynGYi_RiyYHGt-10" target="R85Hv1dynGYi_RiyYHGt-24" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="650" as="sourcePoint" />
+            <mxPoint x="820" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="R85Hv1dynGYi_RiyYHGt-24" target="R85Hv1dynGYi_RiyYHGt-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-24" value="Laço irá comparar o dígito com todos os outros no banco de dados" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="488.75" y="550" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-26" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(18, 18, 18);&quot;&gt;&quot;Tem certeza que deseja exlcuir esse cartão?&quot;&lt;br&gt;&lt;br&gt;Digite ENTER, para confirmar.&lt;br&gt;ou QUALQUER TECLA, para voltar.&lt;/span&gt;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;align=center;size=0.27999999999999997;" parent="1" vertex="1">
+          <mxGeometry x="634.5" y="657.5" width="175.5" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="R85Hv1dynGYi_RiyYHGt-30" target="R85Hv1dynGYi_RiyYHGt-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-30" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=card;whiteSpace=wrap;size=20;arcSize=12;container=1;" parent="1" vertex="1">
+          <mxGeometry x="644.75" y="800" width="155" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-31" value="Dígito de escolha" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="R85Hv1dynGYi_RiyYHGt-30" vertex="1">
+          <mxGeometry x="18.75" y="15" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-33" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.499;exitY=0.914;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="R85Hv1dynGYi_RiyYHGt-26" target="R85Hv1dynGYi_RiyYHGt-30" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="880" as="sourcePoint" />
+            <mxPoint x="580" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="6ae1nMWUuH40q0Kqllsc-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="755.0099999999998" y="980" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="R85Hv1dynGYi_RiyYHGt-34" target="6ae1nMWUuH40q0Kqllsc-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R85Hv1dynGYi_RiyYHGt-34" value="Dígito de escolha é a tecla ENTER?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="670" y="920" width="110" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-1" value="V" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="772.5" y="950" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-2" value="F" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="637.75" y="948" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-3" value="V" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="605" y="688" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-4" value="F" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="475" y="688" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="6ae1nMWUuH40q0Kqllsc-5" target="6ae1nMWUuH40q0Kqllsc-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-5" value="Todas as informações do cartão são apagadas do banco de dados" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="830.01" y="950" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="6ae1nMWUuH40q0Kqllsc-8" target="6ae1nMWUuH40q0Kqllsc-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-8" value="&quot;Seu cartão foi excluído com sucesso.&amp;nbsp;&lt;div&gt;&lt;br&gt;Pressione ENTER para excluir outro cartão&lt;/div&gt;&lt;div&gt;ou QUALQUER TECLA para voltar ao Menu Principal&quot;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" parent="1" vertex="1">
+          <mxGeometry x="795.26" y="1040" width="192.75" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-9" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=card;whiteSpace=wrap;size=20;arcSize=12;" parent="1" vertex="1">
+          <mxGeometry x="837.76" y="1235" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="6ae1nMWUuH40q0Kqllsc-9" target="6ae1nMWUuH40q0Kqllsc-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-11" value="Entrada do usuário" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="827.76" y="1250" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="6ae1nMWUuH40q0Kqllsc-14" target="6ae1nMWUuH40q0Kqllsc-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L6k6eRB9f3cUbvgONNE9-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6ae1nMWUuH40q0Kqllsc-14" target="L6k6eRB9f3cUbvgONNE9-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-14" value="Entrada é a tecla ENTER?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="847.76" y="1335" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-15" value="Excluir Cartão" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="967.76" y="1335" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-17" value="V" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="925.26" y="1345" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-18" value="F" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="825.26" y="1345" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6ae1nMWUuH40q0Kqllsc-20" value="Excluir Cartão" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="554.5" y="940" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="L6k6eRB9f3cUbvgONNE9-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="L6k6eRB9f3cUbvgONNE9-2" target="L6k6eRB9f3cUbvgONNE9-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L6k6eRB9f3cUbvgONNE9-2" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: rgb(18, 18, 18);&quot;&gt;&quot;ID inválido. Por favor, tente novamente&quot;&lt;/span&gt;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="169.995" y="835" width="131.25" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="L6k6eRB9f3cUbvgONNE9-3" value="Excluir Cartão" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="820" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="L6k6eRB9f3cUbvgONNE9-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="L6k6eRB9f3cUbvgONNE9-4" target="L6k6eRB9f3cUbvgONNE9-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L6k6eRB9f3cUbvgONNE9-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="L6k6eRB9f3cUbvgONNE9-4" target="L6k6eRB9f3cUbvgONNE9-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L6k6eRB9f3cUbvgONNE9-4" value="Dígito de escolha é igual a tecla ESC?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354.75" y="800" width="110" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="L6k6eRB9f3cUbvgONNE9-7" value="Menu Principal" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="495" y="820" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="L6k6eRB9f3cUbvgONNE9-9" value="Menu Principal" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="1335" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

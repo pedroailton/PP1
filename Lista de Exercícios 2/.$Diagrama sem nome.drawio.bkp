@@ -1,0 +1,115 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Página-1" id="grA0yjFUvoEzuOteO6T0">
+    <mxGraphModel dx="602" dy="767" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tzm54AQghpNcZX4kV2QB-1" target="Tzm54AQghpNcZX4kV2QB-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-1" value="Início" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="30" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tzm54AQghpNcZX4kV2QB-2" target="Tzm54AQghpNcZX4kV2QB-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Tzm54AQghpNcZX4kV2QB-2" target="Tzm54AQghpNcZX4kV2QB-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-2" value="É terça, quinta ou sábado?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="100" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-4" value="Fim" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="122.5" width="50" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-6" value="F" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="175" y="118" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-10" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="250" y="190" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Tzm54AQghpNcZX4kV2QB-10">
+          <mxGeometry x="15" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-9" value="Vai na cozinha até a gaveta de sacolas de compras" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="Tzm54AQghpNcZX4kV2QB-10">
+          <mxGeometry y="10" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tzm54AQghpNcZX4kV2QB-12" target="Tzm54AQghpNcZX4kV2QB-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tzm54AQghpNcZX4kV2QB-12" target="Tzm54AQghpNcZX4kV2QB-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-12" value="Há 3 sacolas ou mais na gaveta?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="285" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tzm54AQghpNcZX4kV2QB-9" target="Tzm54AQghpNcZX4kV2QB-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Tzm54AQghpNcZX4kV2QB-17" target="Tzm54AQghpNcZX4kV2QB-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-17" value="Pega 3 sacolas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="300" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tzm54AQghpNcZX4kV2QB-19" target="Tzm54AQghpNcZX4kV2QB-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-19" value="Pega a quantidade de sacolas que houver" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="292.5" width="110" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tzm54AQghpNcZX4kV2QB-21" target="Tzm54AQghpNcZX4kV2QB-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-21" value="Procura o resto das sacolas em outro lugar" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="135" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Tzm54AQghpNcZX4kV2QB-23" target="Tzm54AQghpNcZX4kV2QB-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Tzm54AQghpNcZX4kV2QB-23" target="Tzm54AQghpNcZX4kV2QB-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-23" value="Conseguiu 3 sacolas?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="470" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-27" value="F" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="130" y="480" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-28" value="F" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="255" y="298" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-29" value="V" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="355" y="298" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-32" value="V" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="280" y="118" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tzm54AQghpNcZX4kV2QB-34" target="Tzm54AQghpNcZX4kV2QB-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-34" value="Põe as 3 sacolas de plástico na mesa" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="375" y="535" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-37" value="V" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="235" y="488" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tzm54AQghpNcZX4kV2QB-38" target="Tzm54AQghpNcZX4kV2QB-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-38" value="Pega uma das sacolas" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="375" y="620" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Tzm54AQghpNcZX4kV2QB-40" target="Tzm54AQghpNcZX4kV2QB-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-40" value="Vai até o primeiro banheiro da casa" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="375" y="690" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzm54AQghpNcZX4kV2QB-42" value="Abre o lixeiro" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="375" y="760" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
