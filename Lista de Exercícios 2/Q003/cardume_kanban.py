@@ -13,13 +13,16 @@ def gerar_id():
 
 def nome_valido(nome):
     for c in nome:
-        if not (c.isalnum() or c.isspace() or c in "'.,!?\"-"):
+        if not ((c.isalnum()) or (c.isspace()) or (c in "'.,!?\"-")):
             return False
     return True
 
-def ler_tecla():
+def ler_tecla(): #funciona apenas para ler teclas do sistema operacional Windows
     tecla = msvcrt.getch()
-    return tecla.decode('utf-8') if tecla else ''
+    if tecla:
+        return tecla.decode('utf-8')
+    else:
+        return ''
 
 # ===== DADOS =====
 
