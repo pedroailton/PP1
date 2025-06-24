@@ -1,0 +1,40 @@
+Atividade Prática 4 - Estimativas De Leitura Do Usuário
+Aluno: Pedro Ailton Alves da Cunha
+Disciplina: Princípios de Programação
+Professor: Cleyton Magalhães
+Entrega: 26/06/25
+Link da Atividade no Github: https://github.com/pedroailton/Principios_de_Programacao/tree/1d792a80177a60d63380a47b1bbc87c0b80306d1/Atividade%20Pr%C3%A1tica%204
+
+Exigências e Respostas:
+    Tema:
+    Variáveis e Interação com o Usuário
+    
+    Descrição: Crie um programa que interaja com o usuário para coletar dados sobre hábitos de leitura e realizar algumas estimativas úteis. O programa deve solicitar ao usuário os seguintes dados:
+    Nome
+    Idade
+    Cidade, Estado
+    Quantidade de livros digitais lidos no último ano
+    Quantidade de livros físicos lidos no último ano
+    Preferência de leitura (Digital, como Kindle, ou livro físico)
+    Número de horas que dedica aos livros por estudo por semana
+    Número de horas que dedica aos livros por entretenimento por semana
+    Algum outro atributo que você considere relevante para as questões abaixo:
+    ------------------------------------------------------------------------------------------------------
+    
+    Tarefas e Cálculos que a aplicação deve realizar:
+    
+    1 - Mensagem personalizada: Exiba uma mensagem de boas-vindas mencionando o nome do usuário. 
+    Use os dados de idade e cidade e estado para trazer informação útil ao usuário. O que você acha que é relevante nesta aplicação usando estes dados?
+    2 - Estimativa de leitura: Com base na quantidade de livros que o usuário leu no último ano, calcule e exiba uma estimativa de quantos livros ele leria nos próximos 5 anos, assumindo que ele mantém o mesmo ritmo de leitura. Tanto para a finalidade de entretenimento como para finalidade de estudos. De feedbacks diferentes para valores de estimativas diferentes, ou seja, se o leitor lê muitos livros ou se ele está lendo muito pouco.
+    3 - Cálculo de estudo por ano: Com base nas horas de estudo semanais, calcule quantas horas o usuário dedica aos estudos em um ano (assumindo 52 semanas).
+    4 - Cálculo de leituras por ano: Com base nas horas de leitura para entretenimento semanais, calcule quantas horas o usuário dedica aos estudos em um ano (assumindo 52 semanas).
+    5 - Crie, no mínimo, duas funções com tendências ou estimativas que você ache que sejam relevantes neste contexto (sejam criativos).
+    
+    ------------------------------------------------------------------------------------------------------
+    Observações
+    - Organize e comente seu código
+    - Seja criativo.
+    - Podem fazer uso do TKinter
+
+Obs:
+    1.
