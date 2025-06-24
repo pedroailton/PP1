@@ -1,89 +1,175 @@
-import tkinter
+import tkinter as tk
+from tkinter import messagebox
 
-if __name__ == '__main__':
+# Função para tooltip (dica ao passar o mouse)
+def criar_tooltip(widget, texto):
+    tooltip = tk.Toplevel(widget)
+    tooltip.withdraw()
+    tooltip.overrideredirect(True)
+    label = tk.Label(tooltip, text=texto, background="#ffffe0", relief='solid', borderwidth=1, font=("Segoe UI", 9))
+    label.pack()
 
-    def estimar_livros_futuros(digitais, fisicos):
-        # Função para estimar livros nos próximos 5 anos
-        total = digitais + fisicos
-        futuro = total * 5
-        if futuro >= 100:
-            print(f"\nIncrível!\nSe continuar nesse ritmo, você pode ler cerca de {futuro} livros nos próximos 5 anos!")
-        elif 40 <= futuro < 100:
-            print(f"\nMuito bom!\nVocê poderá ler aproximadamente {futuro} livros em 5 anos.")
+    def mostrar(event):
+        x, y, cx, cy = widget.bbox("insert")
+        x += widget.winfo_rootx() + 30
+        y += widget.winfo_rooty() + 10
+        tooltip.geometry(f"+{x}+{y}")
+        tooltip.deiconify()
+
+    def esconder(event):
+        tooltip.withdraw()
+
+    widget.bind('<Enter>', mostrar)
+    widget.bind('<Leave>', esconder)
+
+# Função principal de cálculo
+def calcular_estatisticas():
+    try:
+        nome = entry_nome.get()
+        idade = int(entry_idade.get())
+        cidade = entry_cidade.get()
+        estado = entry_estado.get()
+        digitais = int(entry_digitais.get())
+        fisicos = int(entry_fisicos.get())
+        estudo = float(entry_estudo.get())
+        lazer = float(entry_lazer.get())
+        preferencia = var_preferencia.get()
+        area = entry_area.get()
+
+        if not nome or not cidade or not estado or not area:
+            raise ValueError("Todos os campos devem estar preenchidos.")
+
+        total_livros = digitais + fisicos
+        livros_5_anos = total_livros * 5
+        horas_estudo_ano = estudo * 52
+        horas_lazer_ano = lazer * 52
+        paginas_ano = total_livros * 250
+
+        if livros_5_anos >= 100:
+            nivel = "Ávido(a)"
+            blocos_coloridos = 10
+        elif livros_5_anos >= 50:
+            nivel = "Frequente"
+            blocos_coloridos = 7
+        elif livros_5_anos >= 20:
+            nivel = "Regular"
+            blocos_coloridos = 4
         else:
-            print(f"\nVamos aumentar a leitura? Ela é um hábito importante.\nVocê pode ler cerca de {futuro} livros nos próximos 5 anos.")
+            nivel = "Iniciante"
+            blocos_coloridos = 2
 
-    def calcular_horas_anuais(horas_semanais):
-        # Função para calcular o tempo anual com base em horas semanais
-        return horas_semanais * 52
-    
-    def estimar_paginas_por_ano(livros):
-        # Função adicional: estimar páginas lidas por ano
-        media_paginas = 300
-        return livros * media_paginas
-
-    def impacto_na_vida(idade, horas_estudo_ano):
-        # Função adicional: estimar impacto de leitura na vida acadêmica
-        if idade < 18 and horas_estudo_ano > 300:
-            return "Você está em ótima fase de aprendizado, continue assim!"
-        elif idade >= 18 and horas_estudo_ano > 500:
-            return "Seu comprometimento com o conhecimento é exemplar!"
+        mensagem = f"\n🎉 Olá, {nome} de {cidade}-{estado}!\n"
+        if idade < 18:
+            mensagem += "Você está em uma fase essencial para adquirir hábitos de leitura.\n"
+        elif idade < 30:
+            mensagem += "Leitura pode ser seu maior diferencial nessa fase profissional.\n"
         else:
-            return "Considere aumentar suas horas de estudo para melhor desempenho."
+            mensagem += "Nunca é tarde para mergulhar em bons livros.\n"
 
-    # Coleta de dados do usuário
-    print("🔍 Bem-vindo ao Relatório do Leitor!\n")
+        mensagem += f"\n📚 Nível de leitura: {nivel}\n"
+        mensagem += f"📖 Você informou que leu {total_livros} livros no último ano. Isso equivale a {livros_5_anos} livros em 5 anos.\n"
+        mensagem += f"📘 Estudo anual: {horas_estudo_ano:.0f} horas | Lazer anual: {horas_lazer_ano:.0f} horas\n"
+        mensagem += f"📄 Estimativa de leitura: {paginas_ano} páginas/ano\n"
+        mensagem += f"🎯 Preferência: {preferencia} | Área: {area}"
 
-    nome = input("Digite seu primeiro nome: ")
+        resultado_text.config(state='normal')
+        resultado_text.delete("1.0", tk.END)
+        resultado_text.insert(tk.END, mensagem)
+        resultado_text.config(state='disabled')
 
-    idade = int(input("Digite sua idade: "))
+        # Atualiza barra de progresso
+        canvas_barra.delete("all")
+        cores = ["#6a0dad", "#8a2be2", "#9370db", "#4b0082"]  # tons de roxo
+        cor_nivel = {"Iniciante": "#6a0dad", "Regular": "#8a2be2", "Frequente": "#9370db", "Ávido(a)": "#4b0082"}.get(nivel, "gray")
 
-    cidade = input("Cidade: ")
+        for i in range(10):
+            x0 = 5
+            y0 = 195 - i * 20
+            x1 = 45
+            y1 = y0 + 18
+            if i < blocos_coloridos:
+                canvas_barra.create_rectangle(x0, y0, x1, y1, fill=cor_nivel, outline="black")
+            else:
+                canvas_barra.create_rectangle(x0, y0, x1, y1, fill="#3a3a3a", outline="black")
 
-    estado = input("Estado: ")
+        criar_tooltip(canvas_barra, f"Nível: {nivel}\n{livros_5_anos} livros/5 anos")
 
-    livros_digitais = int(input("Quantos livros digitais você leu no último ano? "))
+    except ValueError as e:
+        messagebox.showerror("Erro de entrada", f"⚠️ Dados inválidos ou incompletos: {str(e)}")
 
-    livros_fisicos = int(input("Quantos livros físicos você leu no último ano? "))
+# Interface principal
+root = tk.Tk()
+root.title("Relatório de Leitura 📚")
+root.geometry("650x600")
+root.configure(bg="#1e1a1a")
 
-    preferencia = input("Você prefere ler em formato Digital ou Físico? ")
+# Área superior (Entradas)
+top_frame = tk.Frame(root, height=300, bg="#1a1a1a")
+top_frame.pack(fill="both", expand=False)
 
-    horas_estudo_semana = float(input("Quantas horas por semana você estuda com livros? "))
+canvas_top = tk.Canvas(top_frame, bg="#2d2d2d")
+top_scrollbar = tk.Scrollbar(top_frame, orient="vertical", command=canvas_top.yview)
+entry_container = tk.Frame(canvas_top, bg="#2d2d2d")
 
-    horas_entretenimento_semana = float(input("Quantas horas por semana você lê por entretenimento? "))
+entry_container.bind("<Configure>", lambda e: canvas_top.configure(scrollregion=canvas_top.bbox("all")))
+canvas_top.create_window((0, 0), window=entry_container, anchor="nw")
+canvas_top.configure(yscrollcommand=top_scrollbar.set)
 
-    profissao = input("Qual sua ocupação ou área de interesse? ")
+canvas_top.pack(side="left", fill="both", expand=True)
+top_scrollbar.pack(side="right", fill="y")
 
-    # Mensagem de boas-vindas e contexto
-    print(f"\n🎉 Olá, {nome}! Que bom ter alguém de {cidade}, {estado} aqui.")
-    if idade < 18:
-        print("Você está em uma fase excelente para desenvolver bons hábitos de leitura desde cedo!\nIsso pode mudar sua vida e seu futuro.")
-    elif idade <= 30:
-        print("A leitura pode ser um diferencial enorme em sua vida profissional e pessoal.\nAproveite!")
+# Área inferior (Resultados)
+bottom_frame = tk.Frame(root, bg="#1a1a1a")
+bottom_frame.pack(fill="both", expand=True)
+
+left_result = tk.Frame(bottom_frame, bg="#1a1a1a")
+left_result.pack(side="left", fill="both", expand=True)
+right_barra = tk.Frame(bottom_frame, width=50, bg="#1a1a1a")
+right_barra.pack(side="right", fill="y")
+
+canvas_bottom = tk.Canvas(left_result, bg="#2d2d2d")
+bottom_scrollbar = tk.Scrollbar(left_result, orient="vertical", command=canvas_bottom.yview)
+result_container = tk.Frame(canvas_bottom, bg="#2d2d2d")
+
+result_container.bind("<Configure>", lambda e: canvas_bottom.configure(scrollregion=canvas_bottom.bbox("all")))
+canvas_bottom.create_window((0, 0), window=result_container, anchor="nw")
+canvas_bottom.configure(yscrollcommand=bottom_scrollbar.set)
+
+canvas_bottom.pack(side="left", fill="both", expand=True)
+bottom_scrollbar.pack(side="right", fill="y")
+
+# Labels e campos de entrada
+labels = ["Nome", "Idade", "Cidade", "Estado", "Livros digitais (último ano)", "Livros físicos (último ano)",
+          "Horas de estudo/semana", "Horas de lazer/semana", "Preferência de leitura", "Área de interesse"]
+entries = []
+
+for i, label in enumerate(labels):
+    tk.Label(entry_container, text=label+":", anchor="w", bg="#2d2d2d", fg="white", font=("Segoe UI", 10, "bold"))\
+        .grid(row=i, column=0, sticky="w", padx=10, pady=5)
+    if label == "Preferência de leitura":
+        var_preferencia = tk.StringVar(value="Digital")
+        menu = tk.OptionMenu(entry_container, var_preferencia, "Digital", "Físico")
+        menu.config(bg="#6a0dad", fg="white")
+        menu.grid(row=i, column=1, sticky="ew", padx=10, pady=5)
     else:
-        print("Nunca é tarde para aprender e explorar novos mundos através da leitura!\nContinue buscando!")
+        entry = tk.Entry(entry_container, bg="#ffffff", fg="#000000")
+        entry.grid(row=i, column=1, sticky="ew", padx=10, pady=5)
+        entries.append(entry)
 
-    # Estimativas
-    estimar_livros_futuros(livros_digitais, livros_fisicos)
+entry_nome, entry_idade, entry_cidade, entry_estado, entry_digitais, entry_fisicos, \
+entry_estudo, entry_lazer, entry_area = entries[:9]
 
-    horas_estudo_ano = calcular_horas_anuais(horas_estudo_semana)
-    horas_entretenimento_ano = calcular_horas_anuais(horas_entretenimento_semana)
+# Botão de ação
+tk.Button(entry_container, text="🔍 Analisar Perfil", bg="#6a0dad", fg="white",
+          font=("Segoe UI", 11, "bold"), command=calcular_estatisticas).grid(row=len(labels), column=0, columnspan=2, pady=10)
 
-    print(f"\n📘 Você estuda aproximadamente {horas_estudo_ano:.1f} horas por ano com livros.")
-    print(f"📖 E lê cerca de {horas_entretenimento_ano:.1f} horas por ano por lazer.")
+# Campo de resultado
+resultado_text = tk.Text(result_container, wrap=tk.WORD, font=("Segoe UI", 10), bg="#3a3a3a", fg="white", height=15)
+resultado_text.pack(fill="both", expand=True, padx=10, pady=10)
+resultado_text.config(state='disabled')
 
-    # Funções criativas
-    total_livros = livros_digitais + livros_fisicos
-    total_paginas = estimar_paginas_por_ano(total_livros)
-    print(f"📄 Estimamos que você leu cerca de {total_paginas} páginas no último ano (média de 250 páginas por livro).")
+# Barra de progresso visual
+canvas_barra = tk.Canvas(right_barra, width=50, height=220, bg="#1a1a1a", highlightthickness=0)
+canvas_barra.pack(pady=20)
 
-    impacto = impacto_na_vida(idade, horas_estudo_ano)
-    print(f"\n💡 {impacto}")
-
-    # Preferência
-    print(f"\nSua preferência por leitura é: {preferencia}. Isso nos ajuda a entender suas preferências e indicar boas práticas!")
-
-    # Ocupação
-    print(f"Área de interesse: {profissao}. Leitura é uma ferramenta poderosa em qualquer profissão!")
-
-    print("\n✨ Obrigado por utilizar nosso programa! Continue cultivando o hábito da leitura!")
+root.mainloop()
