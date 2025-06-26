@@ -2,27 +2,16 @@ import tkinter as tk
 from tkinter import messagebox
 
 def calcular_estatisticas():
-    '''
-    Função principal de cálculo
-    Esta função coleta dados do formulário, valida as entradas, realiza cálculos
-    estatísticos com base nas informações do usuário e exibe um relatório de leitura
-    personalizado, além de atualizar uma barra de progresso gráfica.
-    '''
     try:
-        # Coleta e limpeza do nome
         nome = entry_nome.get().strip()
-
-        # Validação da idade: impede letras e negativos
         idade_conferir = entry_idade.get()
         if not idade_conferir.isdigit():
             raise ValueError("Idade deve ser um número inteiro positivo.")
         idade = int(idade_conferir)
 
-        # Coleta e limpeza de outros dados de texto
         cidade = entry_cidade.get().strip()
         estado = entry_estado.get().strip()
 
-        # Conversão direta dos campos numéricos
         digitais = int(entry_digitais.get())
         fisicos = int(entry_fisicos.get())
         estudo = float(entry_estudo.get())
@@ -31,21 +20,16 @@ def calcular_estatisticas():
         preferencia = var_preferencia.get().strip()
         area = entry_area.get()
 
-        # Verificação de campos obrigatórios de texto
         if not nome or not cidade or not estado or not area:
             raise ValueError("Todos os campos devem estar preenchidos.")
 
-        # Cálculos estatísticos com base nas entradas
         total_livros = digitais + fisicos
-        livros_5_anos = total_livros * 5  # ✅ Requisito 2: Estimativa de leitura para 5 anos utilizando o mesmo tempo para os 5 anos
-        horas_estudo_ano = estudo * 52  # ✅ Requisito 3: Cálculo de horas de estudo por ano, com 52 semanas levadas em consideração
-        horas_lazer_ano = lazer * 52    # ✅ Requisito 4: Cálculo de horas de leitura de lazer por ano, com 52 semanas levadas em consideração
-        
+        livros_5_anos = total_livros * 5
+        horas_estudo_ano = estudo * 52
+        horas_lazer_ano = lazer * 52
         media_paginas_livro = 300
-        paginas_ano = total_livros * media_paginas_livro  # ✅ Requisito 5.1: Estimativa do número de páginas lidas
+        paginas_ano = total_livros * media_paginas_livro
 
-        # Algoritmo de desempenho com base na previsão de leitura de 5 anos
-        
         if livros_5_anos >= 100:
             nivel = "Ávido(a)"
             blocos_coloridos = 10
@@ -59,10 +43,8 @@ def calcular_estatisticas():
             nivel = "Iniciante"
             blocos_coloridos = 2
 
-        # ✅ Requisito 1: Mensagem de boas-vindas personalizada com nome, cidade, estado e idade
         mensagem = f"\n🎉 Olá, {nome} de {cidade}-{estado}!\n"
 
-        # ✅ Requisito 5.2: Informação útil com base na idade
         if idade < 18:
             mensagem += "Você está em uma fase essencial para adquirir hábitos de leitura.\n"
         elif idade < 30:
@@ -70,27 +52,19 @@ def calcular_estatisticas():
         else:
             mensagem += "Nunca é tarde para mergulhar em bons livros.\n"
 
-        # ✅ Requisito 2: Mensagem diferente dependendo da quantidade de livros
         mensagem += f"\n📚 Nível de leitura: {nivel}\n"
         mensagem += f"📖 Você informou que leu {total_livros} livros no último ano. Isso equivale a {livros_5_anos} livros em 5 anos.\n"
-
-        # ✅ Requisitos 3 e 4: Exibe cálculos de horas anuais
         mensagem += f"📘 Estudo anual: {horas_estudo_ano:.0f} horas | Lazer anual: {horas_lazer_ano:.0f} horas\n"
-
-        # ✅ Estimativa adicional de leitura em páginas por ano (função extra/tendência útil)
         mensagem += f"📄 Estimativa de leitura: {paginas_ano} páginas/ano\n"
-
         mensagem += f"🎯 Preferência: {preferencia} | Área: {area}\n"
         mensagem += "\n💬 Dica Literária: Que tal explorar novos autores ou gêneros dentro da sua área favorita? A leitura é um universo sem fim — e você já deu passos incríveis nessa jornada.\n"
         mensagem += "📈 Continue lendo e crescendo na leitura e fazendo sua história. O próximo capítulo é seu!"
 
-        # ✅ Exibição da mensagem de saída com personalização e conselhos
         resultado_text.config(state='normal')
         resultado_text.delete("1.0", tk.END)
         resultado_text.insert(tk.END, mensagem)
         resultado_text.config(state='disabled')
 
-        # ✅ Representação visual do progresso com base nos dados
         canvas_barra.delete("all")
         cor_nivel = {"Iniciante": "#9370db", "Regular": "#8a2be2", "Frequente": "#6a0dad", "Ávido(a)": "#4b0082"}.get(nivel, "gray")
         for i in range(10):
