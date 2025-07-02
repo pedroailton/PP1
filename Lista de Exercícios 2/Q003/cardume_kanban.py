@@ -24,9 +24,9 @@ def nome_ja_existe(nome):
 
 def ler_tecla():
     # Lê uma tecla pressionada pelo usuário (sem precisar apertar ENTER)
-    tecla = msvcrt.getch()
+    tecla = msvcrt.getch() # retorna um byte
     if tecla:
-        return tecla.decode('utf-8')
+        return tecla.decode('utf-8') # decodifica o byte para string
     else:
         return ''
 
